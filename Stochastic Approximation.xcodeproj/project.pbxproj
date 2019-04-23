@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E5EA2CA225122E0006CD4FC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 7E5EA2C9225122E0006CD4FC /* main.c */; };
+		7E350A9D2260006900DCE165 /* Robust_SA_small.c in Sources */ = {isa = PBXBuildFile; fileRef = 7E5ADEC8225AE44F00A3B8CB /* Robust_SA_small.c */; };
+		7E5EA2D222512325006CD4FC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5EA2D122512324006CD4FC /* CoreFoundation.framework */; };
+		7E5EA2D42251232C006CD4FC /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5EA2D32251232C006CD4FC /* IOKit.framework */; };
+		7E5EA2D92251234F006CD4FC /* libilocplex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5EA2D52251234F006CD4FC /* libilocplex.a */; };
+		7E5EA2DA2251234F006CD4FC /* libconcert.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5EA2D62251234F006CD4FC /* libconcert.a */; };
+		7E5EA2DB2251234F006CD4FC /* libcplex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5EA2D72251234F006CD4FC /* libcplex.a */; };
+		7E5EA2DC2251234F006CD4FC /* libcplexdistmip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5EA2D82251234F006CD4FC /* libcplexdistmip.a */; };
+		7E5EA43F225334AF006CD4FC /* support.h in Sources */ = {isa = PBXBuildFile; fileRef = 7E5EA2E72251365A006CD4FC /* support.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +30,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7E5ADEC8225AE44F00A3B8CB /* Robust_SA_small.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Robust_SA_small.c; sourceTree = "<group>"; };
+		7E5ADEE0225DCD4500A3B8CB /* CI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CI.h; sourceTree = "<group>"; };
+		7E5ADEE1225DCD4500A3B8CB /* CI.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CI.c; sourceTree = "<group>"; };
 		7E5EA2C6225122E0006CD4FC /* Stochastic Approximation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Stochastic Approximation"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E5EA2C9225122E0006CD4FC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		7E5EA2C9225122E0006CD4FC /* SA_large.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SA_large.c; sourceTree = "<group>"; };
+		7E5EA2D122512324006CD4FC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		7E5EA2D32251232C006CD4FC /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		7E5EA2D52251234F006CD4FC /* libilocplex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libilocplex.a; path = "../../../../../Applications/CPLEX_Studio128/cplex/lib/x86-64_osx/static_pic/libilocplex.a"; sourceTree = "<group>"; };
+		7E5EA2D62251234F006CD4FC /* libconcert.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libconcert.a; path = "../../../../../Applications/CPLEX_Studio128/concert/lib/x86-64_osx/static_pic/libconcert.a"; sourceTree = "<group>"; };
+		7E5EA2D72251234F006CD4FC /* libcplex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcplex.a; path = "../../../../../Applications/CPLEX_Studio128/cplex/lib/x86-64_osx/static_pic/libcplex.a"; sourceTree = "<group>"; };
+		7E5EA2D82251234F006CD4FC /* libcplexdistmip.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcplexdistmip.a; path = "../../../../../Applications/CPLEX_Studio128/cplex/lib/x86-64_osx/static_pic/libcplexdistmip.a"; sourceTree = "<group>"; };
+		7E5EA2E72251365A006CD4FC /* support.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = support.h; sourceTree = "<group>"; };
+		7E5EA2EA225145ED006CD4FC /* subprob.lp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = subprob.lp; sourceTree = "<group>"; };
+		7E5EA2EF2251E5E5006CD4FC /* subprob_small.lp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = subprob_small.lp; sourceTree = "<group>"; };
+		7E5EA32222527DF1006CD4FC /* SA_small.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SA_small.c; sourceTree = "<group>"; };
+		7E5EA32922528496006CD4FC /* get_final_obj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = get_final_obj.h; sourceTree = "<group>"; };
+		7E5EA32A22528496006CD4FC /* get_final_obj.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = get_final_obj.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +54,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5EA2D92251234F006CD4FC /* libilocplex.a in Frameworks */,
+				7E5EA2DA2251234F006CD4FC /* libconcert.a in Frameworks */,
+				7E5EA2DB2251234F006CD4FC /* libcplex.a in Frameworks */,
+				7E5EA2DC2251234F006CD4FC /* libcplexdistmip.a in Frameworks */,
+				7E5EA2D42251232C006CD4FC /* IOKit.framework in Frameworks */,
+				7E5EA2D222512325006CD4FC /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +71,7 @@
 			children = (
 				7E5EA2C8225122E0006CD4FC /* Stochastic Approximation */,
 				7E5EA2C7225122E0006CD4FC /* Products */,
+				7E5EA2D022512324006CD4FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +86,31 @@
 		7E5EA2C8225122E0006CD4FC /* Stochastic Approximation */ = {
 			isa = PBXGroup;
 			children = (
-				7E5EA2C9225122E0006CD4FC /* main.c */,
+				7E5EA32222527DF1006CD4FC /* SA_small.c */,
+				7E5ADEE0225DCD4500A3B8CB /* CI.h */,
+				7E5ADEE1225DCD4500A3B8CB /* CI.c */,
+				7E5ADEC8225AE44F00A3B8CB /* Robust_SA_small.c */,
+				7E5EA2EF2251E5E5006CD4FC /* subprob_small.lp */,
+				7E5EA2EA225145ED006CD4FC /* subprob.lp */,
+				7E5EA2C9225122E0006CD4FC /* SA_large.c */,
+				7E5EA32922528496006CD4FC /* get_final_obj.h */,
+				7E5EA32A22528496006CD4FC /* get_final_obj.c */,
+				7E5EA2E72251365A006CD4FC /* support.h */,
 			);
 			path = "Stochastic Approximation";
+			sourceTree = "<group>";
+		};
+		7E5EA2D022512324006CD4FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E5EA2D62251234F006CD4FC /* libconcert.a */,
+				7E5EA2D72251234F006CD4FC /* libcplex.a */,
+				7E5EA2D82251234F006CD4FC /* libcplexdistmip.a */,
+				7E5EA2D52251234F006CD4FC /* libilocplex.a */,
+				7E5EA2D32251232C006CD4FC /* IOKit.framework */,
+				7E5EA2D122512324006CD4FC /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E5EA2CA225122E0006CD4FC /* main.c in Sources */,
+				7E350A9D2260006900DCE165 /* Robust_SA_small.c in Sources */,
+				7E5EA43F225334AF006CD4FC /* support.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +291,19 @@
 		7E5EA2CE225122E0006CD4FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JBP2638P2L;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					/Applications/CPLEX_Studio128/cplex/include,
+					/Applications/CPLEX_Studio128/concert/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Applications/CPLEX_Studio128/cplex/lib/x86-64_osx/static_pic\"",
+					"\"/Applications/CPLEX_Studio128/concert/lib/x86-64_osx/static_pic\"",
+				);
+				OTHER_CFLAGS = "-DIL-STD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,8 +311,18 @@
 		7E5EA2CF225122E0006CD4FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JBP2638P2L;
+				HEADER_SEARCH_PATHS = (
+					/Applications/CPLEX_Studio128/cplex/include,
+					/Applications/CPLEX_Studio128/concert/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"/Applications/CPLEX_Studio128/cplex/lib/x86-64_osx/static_pic\"",
+					"\"/Applications/CPLEX_Studio128/concert/lib/x86-64_osx/static_pic\"",
+				);
+				OTHER_CFLAGS = "-DIL-STD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
